@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cuestionario sobre Audífonos</title>
+    <link rel="stylesheet" href="estilos.css.css">
+    <link rel="icon" href="pintures/audi1.webp" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Cuestionario sobre Audífonos</h1>
+    </header>
+
+    <section class="form-container">
+        <form action="" method="post">
+            <div class="form-group">
+                <label for="nombre">Tu nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" pattern="[A-Za-záéíóúÁÉÍÓÚ\s]+" title="El nombre solo puede contener letras y espacios" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="apellido">Tu apellido Materno, Paterno:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" pattern="[A-Za-záéíóúÁÉÍÓÚ\s]+" title="El apellido solo puede contener letras y espacios" required>
+            </div>
+
+            <div class="form-group">
+                <label for="tipo-audifono">Que tipo de audifonos utilizas</label>
+                <select id="tipo-audifono" name="tipo-audifono" required>
+                    <option value="ninguno">No uso audífonos</option>
+                    <option value="inalambricos">Audífonos inalámbricos</option>
+                    <option value="con-cable">Audífonos con cable</option>
+                    <option value="audifonos-para-personas-con-dificultades-auditivas">Audífonos para personas con dificultades auditivas</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="comentario">Pon tu comentario:</label>
+                <textarea id="comentario" name="comentario" rows="4" placeholder="Escribe tu opinión sobre los audífonos..." required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Enviar</button>
+        </form>
+    </section>
+    <nav>
+        <a href="index.html.html">PAGINA PRINCIPAL</a>
+    </nav>
+    <footer>
+        <p>&copy; 2024 Historia de los Audífonos | Todos los derechos reservados | Cristian Cutile Flores</p>
+    </footer>
+    
+</body>
+</html>

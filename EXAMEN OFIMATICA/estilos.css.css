@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #d8bb6b;
+    color: #333;
+}
+header {
+    background: #f1e499;
+    color: #1f1f1c;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+
+nav {
+    background-color: #222;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+nav a {
+    color: #e6e364;
+    font-size: 1.1em;
+    margin: 0 20px;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #f3ce69;
+    border-radius: 5px;
+}
+section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+ul li {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.timeline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.timeline .event {
+    flex: 1;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.timeline .event:hover {
+    transform: translateY(-10px);
+}
+
+.image-container {
+    text-align: center;
+    margin-top: 40px;
+}
+.moving-image {
+    width: 300px;
+    animation: moveImage 5s linear infinite;
+}
+
+@keyframes moveImage {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+footer {
+    background-color: #e6d178;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+footer p {
+    font-size: 1.1em;
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.form-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+input[type="text"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+input[type="text"]:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #333;
+}
+textarea {
+    resize: vertical;
+}
+
+button.submit-btn {
+    padding: 12px 18px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    text-align: center;
+}
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tr:hover {
+    background-color: #ddd;
+}
+img {
+    width: 100px; 
+    height: auto;
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+h1 {
+    text-align: center;
+}
+.content {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+section {
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    color: #333;
+}
+p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
